@@ -35,6 +35,8 @@ p {
   margin: 0 auto;
 }
 
+/* Шапка */
+
 .header {
   background-color: #323232;
   border-bottom: 1px solid rgba(161, 161, 161, 0.5);
@@ -70,6 +72,8 @@ p {
 .link {
   text-decoration: none;
 }
+
+/* Герой */
 
 .hero {
   background-color: #323232;
@@ -127,6 +131,8 @@ p {
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
 }
+
+/* Мобильные приложения */
 
 .section-title {
   font-weight: 700;
@@ -238,6 +244,8 @@ p {
   color: var(--accent);
 }
 
+/* Стандарты разработки */
+
 .standart {
   padding-top: 110px;
   padding-bottom: 70px;
@@ -289,6 +297,9 @@ p {
 .standarts-item-icons {
   fill: var(--accent);
 }
+
+/* Наши работы */
+
 .works {
   padding-top: 100px;
   padding-bottom: 85px;
@@ -332,6 +343,8 @@ p {
   margin-bottom: 30px;
 }
 
+/* Наши проекты */
+
 .progect {
   padding-top: 100px;
   padding-bottom: 130px;
@@ -356,6 +369,8 @@ p {
 .progect-button {
   margin: 0 auto;
 }
+
+/* Видео о работе */
 
 .video {
   position: relative;
@@ -429,4 +444,96 @@ p {
 .play-icon-wrap:hover > .play-icon,
 .play-icon-wrap:focus > .play-icon {
   fill: var(--accent);
+}
+
+/* Подписка */
+
+.subscription {
+  padding-top: 85px;
+  padding-bottom: 85px;
+  text-align: center;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+}
+
+.subsection-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+
+  color: #000000;
+}
+
+.subscription-item-title {
+  margin-bottom: 20px;
+}
+
+.subscription-text {
+  margin-bottom: 30px;
+}
+
+.subscription-button {
+  margin: 0 auto 35px;
+}
+
+/* Футер */
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #f6f6f8;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-item-title {
+  margin-bottom: 35px;
+}
+
+.footer-subitem {
+  margin-bottom: 30px;
+}
+
+.footer-item-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  fill: var(--main-text-color);
+}
+
+.footer-item-text:hover,
+.footer-item-text:focus {
+  color: var(--accent);
+  fill: var(--accent);
+}
+
+.icon-arrow {
+  margin-right: 10px;
+}
+
+.icon-address {
+  margin-right: 15px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.copyright {
+  margin-top: 30px;
+  font-size: 13px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--main-text-color);
 }
