@@ -38,7 +38,8 @@ p {
 /* Шапка */
 
 .header {
-  background-color: #323232;
+  position: relative;
+  z-index: 1;
   border-bottom: 1px solid rgba(161, 161, 161, 0.5);
 }
 
@@ -56,6 +57,7 @@ p {
 }
 
 .menu-link {
+  position: relative;
   display: inline-block;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -65,10 +67,27 @@ p {
   color: var(--white-color);
 }
 
+.menu-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid;
+  background: var(--accent);
+  opacity: 0;
+}
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent);
 }
+
+.menu-link:hover::after,
+.menu-link:focus::after {
+  opacity: 1;
+}
+
 .link {
   text-decoration: none;
 }
@@ -76,9 +95,13 @@ p {
 /* Герой */
 
 .hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #323232;
   text-align: center;
-  padding-top: 219px;
+  padding-top: 319px;
   padding-bottom: 335px;
   background-image: linear-gradient(
       0deg,
@@ -313,8 +336,8 @@ p {
 .works-item-title span {
   color: var(--accent);
 }
-.progect-title,
-.progect-text {
+.project-title,
+.project-text {
   text-align: center;
 }
 
@@ -345,28 +368,28 @@ p {
 
 /* Наши проекты */
 
-.progect {
+.project {
   padding-top: 100px;
   padding-bottom: 130px;
 }
 
-.progect-title {
+.project-title {
   margin-bottom: 50px;
 }
 
-.progect-text {
+.project-text {
   width: 730px;
   margin: 0 auto 70px;
 }
 
-.progect-list {
+.project-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
 }
 
-.progect-button {
+.project-button {
   margin: 0 auto;
 }
 
