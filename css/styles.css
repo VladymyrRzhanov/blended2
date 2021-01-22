@@ -9,6 +9,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+  background-color: #f6f6f8;
 }
 
 ul {
@@ -94,11 +95,19 @@ p {
 
 /* Герой */
 
+.section-hero {
+  position: relative;
+  height: 800px;
+  width: 1920px;
+  margin: 0 auto;
+}
+
 .hero {
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
   width: 100%;
+  height: 900px;
   background-color: #323232;
   text-align: center;
   padding-top: 319px;
@@ -326,7 +335,7 @@ p {
 .works {
   padding-top: 100px;
   padding-bottom: 85px;
-  background: linear-gradient(#504dc2 50%, #ffffff 50%);
+  background: linear-gradient(#504dc2 50%, #f6f6f8 50%);
 
   background-repeat: no-repeat;
 }
@@ -395,8 +404,14 @@ p {
 
 /* Видео о работе */
 
+.section-video {
+  padding-bottom: 165px;
+}
+
 .video {
   position: relative;
+  width: 1920px;
+  margin: 0 auto;
   padding-top: 70px;
   height: 570px;
   text-align: center;
@@ -419,7 +434,7 @@ p {
 
 .video-content {
   position: absolute;
-  bottom: -70px;
+  bottom: -80px;
   left: calc(50% - 485px);
   display: flex;
   align-items: center;
@@ -430,6 +445,16 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.video-content::before {
+  content: "";
+  position: absolute;
+  bottom: -85px;
+  left: 50%;
+  width: 1110px;
+  border: 1px solid #e0e0e0;
+  transform: translateX(-50%);
 }
 
 .video-button {
@@ -508,8 +533,46 @@ p {
   margin-bottom: 30px;
 }
 
+.form {
+  margin-bottom: 35px;
+}
+
+.form-container {
+  display: inline-block;
+  position: relative;
+}
+
+.email {
+  width: 489px;
+  height: 45px;
+  padding-left: 33px;
+
+  font-size: 13px;
+  line-height: 1.62;
+
+  color: var(--main-text-color);
+  background-color: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+}
+
+.email::placeholder {
+  font-size: 13px;
+  line-height: 1.62;
+  color: var(--main-text-color);
+}
+
 .subscription-button {
-  margin: 0 auto 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 13px 36px 15px 26px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
 }
 
 /* Футер */

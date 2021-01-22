@@ -31,12 +31,14 @@
 
         <!-- Герой -->
 
-    <section class="hero">
-        <div class="container ">
-            <p class="hero-text text">Передовая IT студия</p>
-            <h1 class="hero-title">Мы создаем легкие решения
-                сложных задач и проблем</h1>
-            <a href="" class="hero-button button link">Наши проекты</a>
+    <section class="section-hero">
+        <div class="hero">
+           <div class="container">
+                <p class="hero-text text">Передовая IT студия</p>
+                <h1 class="hero-title">Мы создаем легкие решения
+                    сложных задач и проблем</h1>
+                <a href="" class="hero-button button link">Наши проекты</a>
+           </div>
         </div>
     </section>
 
@@ -229,18 +231,21 @@
 
         <!-- Видео о работе -->
     
-    <section class="video">
-        <div class="container">
-            <h2 class="video-title section-title">Видео о нашей работе</h2>
-            <p class="video-text page-text">Просто посмотрите, как мы работаем</p>
-            <div class="video-content">
-                <button type="button" class="video-button">
-                   <div class="play-icon-wrap">
-                        <svg class="play-icon" width="60" height="60">
-                            <use href="./images/icons.svg#icon-play-button"></use>
-                        </svg>
-                   </div>
-                    Смотреть видео</button>
+        <section class="section-video">
+            <div class="video">
+            <div class="container">
+                <h2 class="video-title section-title">Видео о нашей работе</h2>
+                <p class="video-text page-text">Просто посмотрите, как мы работаем</p>
+                <div class="video-content">
+                    <button type="button" class="video-button">
+                        <div class="play-icon-wrap">
+                            <svg class="play-icon" width="60" height="60">
+                                <use href="./images/icons.svg#icon-play-button"></use>
+                            </svg>
+                        </div>
+                        Смотреть видео
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -252,7 +257,14 @@
             <h2 class="visually-hidden">Подписка на рассылку</h2>
             <h3 class="subscription-item-title subsection-title">Подпишитесь на нашу рассылку</h3>
             <p class="subscription-text page-text">Полезные статьи, акции, новости - получите все это сейчас!</p>
-            <button type="button" class="subscription-button button">Подписаться</button>
+            <form class="form">
+                <div  class="form-container">
+                    <label>
+                        <input class="email" type="email" name="mail" placeholder="Ваш e-mail">
+                    </label>
+                    <button type="button" class="subscription-button button">Подписаться</button>
+                </div>
+            </form>
             <p class="subscription-text page-text">Мы не шлем спам, и передаем никому ваши данные.</p>
         </div>
     </section>
