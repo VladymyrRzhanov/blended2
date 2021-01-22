@@ -4,6 +4,8 @@
   --main-text-color: #999999;
   --secondary-title-color: #323232;
   --white-color: #ffffff;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -66,6 +68,7 @@ p {
   font-size: 16px;
   line-height: 1.25;
   color: var(--white-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .menu-link::after {
@@ -77,6 +80,8 @@ p {
   border: 2px solid;
   background: var(--accent);
   opacity: 0;
+  transition: opacity var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .menu-link:hover,
@@ -162,6 +167,10 @@ p {
   border: 1px solid transparent;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function),
+    border var(--transition-duration) var(--transition-timing-function);
 }
 
 /* Мобильные приложения */
@@ -186,6 +195,7 @@ p {
 
 .mobile-icons {
   fill: var(--accent);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .circle:hover > .mobile-icons {
@@ -211,6 +221,9 @@ p {
   width: 90px;
   height: 90px;
   border-color: var(--accent);
+  background-color: transparent;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .circle:hover {
@@ -472,6 +485,7 @@ p {
   font-size: 16px;
   line-height: 1.56;
   cursor: pointer;
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .play-icon-wrap {
@@ -479,6 +493,9 @@ p {
   height: 60px;
   border-radius: 50%;
   background-color: var(--accent);
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .video-button:hover > .play-icon-wrap,
@@ -489,17 +506,18 @@ p {
 
 .play-icon {
   fill: #ffffff;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.play-icon-wrap:hover > .play-icon,
-.play-icon-wrap:focus > .play-icon {
+.video-button:hover .play-icon,
+.video-button:focus .play-icon {
   fill: var(--accent);
 }
 
-/* .video-button:hover,
+.video-button:hover,
 .video-button:focus {
-  border-color: var(--accent);
-} */
+  color: var(--accent);
+}
 
 /* Подписка */
 
@@ -603,6 +621,8 @@ p {
   align-items: center;
   font-size: 14px;
   fill: var(--main-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-item-text:hover,
