@@ -103,7 +103,6 @@ p {
 .section-hero {
   position: relative;
   height: 800px;
-  width: 1920px;
   margin: 0 auto;
 }
 
@@ -423,7 +422,6 @@ p {
 
 .video {
   position: relative;
-  width: 1920px;
   margin: 0 auto;
   padding-top: 70px;
   height: 570px;
@@ -466,8 +464,9 @@ p {
   bottom: -85px;
   left: 50%;
   width: 1110px;
-  border: 1px solid #e0e0e0;
+  height: 1px;
   transform: translateX(-50%);
+  background-color: #e0e0e0;
 }
 
 .video-button {
