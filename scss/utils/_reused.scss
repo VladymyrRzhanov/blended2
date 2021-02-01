@@ -60,10 +60,7 @@
   border: 1px solid transparent;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
-  transition: color $transition-duration $transition-timing-function,
-    background-color $transition-duration
-      $transition-timing-function,
-    border $transition-duration $transition-timing-function;
+  @include transition(color, background-color, border);
 }
 
 .button:hover,

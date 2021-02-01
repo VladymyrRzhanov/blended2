@@ -1,12 +1,33 @@
+// Миксин для флексбокса
+
 @mixin flex($display : flex, $align-items : center, $justify-content : center) {
     display : $display;
     align-items : $align-items;
     justify-content : $justify-content;
 }
 
-@mixin transition($properties...) { 
-    transition: $transition-duration $transition-timing-function;
-    @if length($properties) > 1 {
+// Миксин для шрифта со всеми значениями (weight, size, height, spacing)
+
+@mixin fontAll($weight, $size, $height, $spacing) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+  }
+  
+  // Миксин для шрифта без значения толщины (size, height, spacing)
+  
+  @mixin fontAll-w($size, $height, $spacing) {
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+  }
+  
+  // Миксин для функии более одного transition
+  
+  @mixin transition($properties...) {
+    transition: $changes;
+    @if length($properties) > 0 {
       transition-property: $properties;
     }
-}
+  }

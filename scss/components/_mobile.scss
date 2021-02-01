@@ -44,7 +44,7 @@
   height: 90px;
   border-color: $accent;
   background-color: transparent;
-  @include transition;
+  @include transition(background-color);
 
     &:hover {
         background-color: $accent;
@@ -53,7 +53,7 @@
 
 .desing__icons {
   fill: $accent;
-  transition: fill $transition-duration $transition-timing-function;
+  @include transition(fill);
 
   .design__circle:hover & {
     fill: $main-title-color;

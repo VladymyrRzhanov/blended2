@@ -47,9 +47,8 @@
     @include flex($justify-content: flex-start);
     font-size: 14px;
     fill: $main-text-color;
-    transition: color $transition-duration $transition-timing-function,
-      fill $transition-duration $transition-timing-function;
-
+    @include transition(color, fill);
+    
     &:hover,
     &:focus {
         color: $accent;
