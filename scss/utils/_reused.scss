@@ -27,9 +27,7 @@
 }
 
 .list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
 }
 
 .list-item {
@@ -48,17 +46,15 @@
 }
 
 .button {
-  display: flex;
+  @include flex;
   width: 200px;
   height: 45px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
-  color: $white-color;
+  color: $main-title-color;
 
   background: $accent;
   border: 1px solid transparent;

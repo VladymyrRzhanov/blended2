@@ -20,26 +20,20 @@
   }
   
   &__list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
   }
 }
-
-
 
 .design {
   margin-right: 17px;
 
   &, &__circle {
-    display: flex;
+    @include flex;
     flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    border: 1px solid #e0e0e0;
+    border: 1px solid $border-color;
   }
 }
 
@@ -50,8 +44,7 @@
   height: 90px;
   border-color: $accent;
   background-color: transparent;
-  transition: background-color $transition-duration
-    $transition-timing-function;
+  @include transition;
 
     &:hover {
         background-color: $accent;
@@ -63,7 +56,7 @@
   transition: fill $transition-duration $transition-timing-function;
 
   .design__circle:hover & {
-    fill: #ffffff;
+    fill: $main-title-color;
   }
 }
 

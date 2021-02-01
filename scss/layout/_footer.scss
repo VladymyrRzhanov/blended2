@@ -1,14 +1,12 @@
 .footer {
     padding-top: 70px;
     padding-bottom: 30px;
-    background-color: #f6f6f8;
+    background-color: $background-color;
 
     &__list {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        @include flex($align-items: flex-start, $justify-content: space-between);
         padding-bottom: 70px;
-        border-bottom: 1px solid #e0e0e0;
+        @extend %border-bottom;
     }
       
     &__subtitle {
@@ -46,8 +44,7 @@
 
   
 .footer-submenu__page-text {
-    display: flex;
-    align-items: center;
+    @include flex($justify-content: flex-start);
     font-size: 14px;
     fill: $main-text-color;
     transition: color $transition-duration $transition-timing-function,
@@ -59,10 +56,3 @@
         fill: $accent;
     }
 }
-  
-
-  
-  
-  
-  
-  

@@ -1,14 +1,12 @@
 .standart {
     padding-top: 110px;
     padding-bottom: 70px;
-    background-color: #f6f6f8;
+    background-color: $background-color;
 
     &__wrap {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex($justify-content: space-between);
         padding-bottom: 90px;
-        border-bottom: 1px solid #e0e0e0;
+        @extend %border-bottom;
     }
       
     &__description {
@@ -47,9 +45,7 @@
   
   
 .progress-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex($justify-content: space-between);
 
     &__icons {
         fill: $accent;

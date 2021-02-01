@@ -1,7 +1,7 @@
 .hero {
     margin: 0 auto;
     height: 900px;
-    background-color: #323232;
+    background-color: $secondary-title-color;
     text-align: center;
     padding-top: 319px;
     padding-bottom: 335px;
@@ -21,7 +21,7 @@
         font-size: 16px;
         line-height: 1.25;
         text-align: center;
-        color: $white-color;
+        color: $main-title-color;
       }
       
     &__title {
@@ -31,7 +31,7 @@
         font-size: 48px;
         line-height: 1.33;
         text-align: center;
-        color: $white-color;
+        color: $main-title-color;
     }
 }
   

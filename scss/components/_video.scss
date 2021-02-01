@@ -21,7 +21,7 @@
     &__page-text {
         margin-bottom: 70px;
         font-size: 16px;
-        color: $white-color;
+        color: $main-title-color;
     }
 }
   
@@ -31,9 +31,7 @@
     position: absolute;
     bottom: -80px;
     left: calc(50% - 485px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex($justify-content: space-between);
     width: 970px;
     height: 430px;
     background-image: url(../images/video_content.png);
@@ -49,23 +47,21 @@
         width: 1110px;
         height: 1px;
         transform: translateX(-50%);
-        background-color: #e0e0e0;
+        background-color: $border-color;
     }
 }
   
   
   
 .video__button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  @include flex($justify-content: space-between);
     min-width: 300px;
     margin: 0 auto;
     padding: 20px 40px;
     border-radius: 100px;
-    border: 1px solid #ffffff;
+    border: 1px solid $main-title-color;
     background-color: transparent;
-    color: #ffffff;
+    color: $main-title-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.56;
@@ -89,7 +85,7 @@
 
     .video__button:hover &,
     .video__button:focus & {
-    background-color: #ffffff;
+    background-color: $main-title-color;
     border-color: $accent;
   }
 }
@@ -97,7 +93,7 @@
   
   
 .video__icon {
-    fill: #ffffff;
+    fill: $main-title-color;
     transition: fill $transition-duration $transition-timing-function;
 
     .video__button:hover &,

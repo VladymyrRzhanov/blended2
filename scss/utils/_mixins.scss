@@ -1,0 +1,12 @@
+@mixin flex($display : flex, $align-items : center, $justify-content : center) {
+    display : $display;
+    align-items : $align-items;
+    justify-content : $justify-content;
+}
+
+@mixin transition($properties...) { 
+    transition: $transition-duration $transition-timing-function;
+    @if length($properties) > 1 {
+      transition-property: $properties;
+    }
+}

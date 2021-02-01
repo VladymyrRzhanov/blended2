@@ -1,13 +1,11 @@
 .works {
     padding-top: 100px;
     padding-bottom: 85px;
-    background: linear-gradient(#504dc2 50%, #f6f6f8 50%);
+    background: linear-gradient(#504dc2 50%, $background-color 50%);
     background-repeat: no-repeat;
 
     &__wrap {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex;
         margin-bottom: 70px;
     }
       
@@ -17,7 +15,7 @@
       
     &__list {
         padding-bottom: 85px;
-        border-bottom: 1px solid #e0e0e0;
+        @extend %border-bottom;
     }
       
     &__images,
