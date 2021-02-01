@@ -25,9 +25,7 @@
   
   
 .details {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(500, 16px, 1.25);
     color: $accent;
     text-decoration: underline;
 }
@@ -52,8 +50,7 @@
     }
       
     &__index {
-        font-size: 36px;
-        line-height: 1.47;
+        @include font-w(36px, 1.47);
         color: $black-color;
     }
 }

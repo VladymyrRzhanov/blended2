@@ -16,8 +16,7 @@
 
     &__copyright {
         margin-top: 30px;
-        font-size: 13px;
-        line-height: 1.62;
+        @include font-w(13px, 1.62);
         text-align: center;
         color: $main-text-color;
     }

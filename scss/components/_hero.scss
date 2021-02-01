@@ -17,9 +17,7 @@
 
     &__text {
         margin-bottom: 20px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.25;
+        @include font(500, 16px, 1.25);
         text-align: center;
         color: $main-title-color;
       }
@@ -27,9 +25,7 @@
     &__title {
         width: 829px;
         margin: 0 auto 50px;
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 1.33;
+        @include font(800, 48px, 1.33);
         text-align: center;
         color: $main-title-color;
     }

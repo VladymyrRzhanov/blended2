@@ -68,8 +68,7 @@
   }
   
   &__text {
-    font-size: 14px;
-    line-height: 1.57;
+    @include font-w(16px, 1.25);
     color: $main-text-color;
   }
 }

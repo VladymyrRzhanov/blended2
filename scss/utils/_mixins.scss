@@ -8,19 +8,17 @@
 
 // Миксин для шрифта со всеми значениями (weight, size, height, spacing)
 
-@mixin fontAll($weight, $size, $height, $spacing) {
+@mixin font($weight, $size, $height) {
     font-weight: $weight;
     font-size: $size;
     line-height: $height;
-    letter-spacing: $spacing;
   }
   
   // Миксин для шрифта без значения толщины (size, height, spacing)
   
-  @mixin fontAll-w($size, $height, $spacing) {
+  @mixin font-w($size, $height) {
     font-size: $size;
     line-height: $height;
-    letter-spacing: $spacing;
   }
   
   // Миксин для функии более одного transition

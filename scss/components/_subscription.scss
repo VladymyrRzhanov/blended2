@@ -41,9 +41,7 @@
     width: 489px;
     height: 45px;
     padding-left: 33px;
-  
-    font-size: 13px;
-    line-height: 1.62;
+    @include font-w(13px, 1.62);
   
     color: $main-text-color;
     background-color: $main-title-color;
@@ -52,8 +50,7 @@
     border-radius: 30px;
 
     &::placeholder {
-        font-size: 13px;
-        line-height: 1.62;
+        @include font-w(13px, 1.62);
         color: $main-text-color;
     }
 }

@@ -6,9 +6,7 @@
 }
 
 .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.47;
+  @include font(700, 36px, 1.47);
 }
 
 .section-title--visually-hidden {
@@ -21,8 +19,7 @@
 
 .page-text {
   font-weight: normal;
-  font-size: 16px;
-  line-height: 1.56;
+  @include font-w(16px, 1.56);
   color: $main-text-color;
 }
 
@@ -39,9 +36,7 @@
 }
 
 .subtitle {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
+  @include font(600, 18px, 1.22);
   color: $black-color;
 }
 
@@ -50,9 +45,7 @@
   width: 200px;
   height: 45px;
   margin: 0 auto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(500, 16px, 1.25);
   text-align: center;
   color: $main-title-color;
 
