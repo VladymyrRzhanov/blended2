@@ -1,0 +1,32 @@
+.works {
+    padding-top: 100px;
+    padding-bottom: 85px;
+    background: linear-gradient(#504dc2 50%, #f6f6f8 50%);
+    background-repeat: no-repeat;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+      
+    &__section-title {
+        color: $main-title-color;
+    }
+      
+    &__list {
+        padding-bottom: 85px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+      
+    &__images,
+    &__subtitle,
+    &__text {
+        margin-bottom: 30px;
+      }
+      
+    &__order {
+        color: $accent;
+    }
+}

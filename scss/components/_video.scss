@@ -1,0 +1,107 @@
+.section-video {
+    padding-bottom: 165px;
+  }
+  
+.video {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 70px;
+    height: 570px;
+    text-align: center;
+    background-image: url(../images/video_section.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__section-title {
+        color: $main-title-color;
+        margin-bottom: 10px;
+    }
+      
+    &__page-text {
+        margin-bottom: 70px;
+        font-size: 16px;
+        color: $white-color;
+    }
+}
+  
+  
+  
+.video__content {
+    position: absolute;
+    bottom: -80px;
+    left: calc(50% - 485px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 970px;
+    height: 430px;
+    background-image: url(../images/video_content.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -85px;
+        left: 50%;
+        width: 1110px;
+        height: 1px;
+        transform: translateX(-50%);
+        background-color: #e0e0e0;
+    }
+}
+  
+  
+  
+.video__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    border-radius: 100px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.56;
+    cursor: pointer;
+    transition: color $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus {
+    color: $accent;
+  }
+}
+  
+.video__play {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $accent;
+    transition: background-color $transition-duration
+        $transition-timing-function,
+      border-color $transition-duration $transition-timing-function;
+
+    .video__button:hover &,
+    .video__button:focus & {
+    background-color: #ffffff;
+    border-color: $accent;
+  }
+}
+  
+  
+  
+.video__icon {
+    fill: #ffffff;
+    transition: fill $transition-duration $transition-timing-function;
+
+    .video__button:hover &,
+    .video__button:focus & {
+    fill: $accent;
+  }
+}
